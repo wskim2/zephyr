@@ -1,0 +1,11 @@
+common:
+  tags: device userspace
+  integration_platforms:
+    - native_posix
+tests:
+  kernel.device:
+    tags: device
+  kernel.device.pm:
+    tags: device
+    extra_configs:
+      - CONFIG_DEVICE_POWER_MANAGEMENT=y
